@@ -1,4 +1,4 @@
-# react-native-maps-osmdroid [![npm version](https://img.shields.io/npm/v/react-native-maps-osmdroid.svg?style=flat)](https://www.npmjs.com/package/react-native-maps-osmdroid)
+# @mvits/react-native-maps-osmdroid [![npm version](https://img.shields.io/npm/v/react-native-maps-osmdroid.svg?style=flat)](https://www.npmjs.com/package/react-native-maps-osmdroid)
 
 Clone of react-native-maps (React Native Map components for iOS + Android) supporting Open Street Maps based on osmdroid.
 
@@ -15,7 +15,7 @@ For osmdroid provider, the following are implemented:
  - Callouts: working. Needed some hacks as result of how it is implemented on osmdroid vs my lack of knowledge on react-native internals.
  - Polygons, working except for z-index and geodesic prop.
  - Polylines, working except for z-index and geodesic prop.
- - Circle, working except for z-index and geodesic prop.
+ - Cricle, working except for z-index and geodesic prop.
 
 ### Differences to react-native-maps
 
@@ -682,6 +682,17 @@ Good:
   <TextInput/>
 </View>
 ```
+About This Project
+--------
+
+This project is a fork from [fqborges/react-native-maps-osmdroid](https://github.com/fqborges/react-native-maps-osmdroid)
+
+
+## About this current version
+
+Version [0.0.1](link) :
+* All function present to master branch project [fqborges/react-native-maps-osmdroid](https://github.com/fqborges/react-native-maps-osmdroid)
+* Fixed and add  polygon function "onPress" event. Contribution made by [Jose Garcia](https://github.com/J0ANGARFLO) (GitHub User @J0ANGARFLO)
 
 
 License
