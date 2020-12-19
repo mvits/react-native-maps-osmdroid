@@ -3,6 +3,8 @@
   "description": "React Native Mapview component for iOS + Android. However this project is only Android tested.",
   "main": "index.js",
   "version": "0.0.1",
+  "author": "Stiv Verdugo <stivmarquez.ud@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "run:packager": "./node_modules/react-native/scripts/packager.sh",
