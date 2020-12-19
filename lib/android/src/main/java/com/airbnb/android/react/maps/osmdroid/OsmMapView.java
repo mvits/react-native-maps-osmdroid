@@ -113,6 +113,7 @@ public class OsmMapView extends MapView implements MapView.OnFirstLayoutListener
         eventDispatcher = reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher();
         this.setTileSource(TileSourceFactory.DEFAULT_TILE_SOURCE);
         this.setTilesScaledToDpi(true);
+        this.setTilesScaleFactor(1);
         this.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
     }
 
@@ -291,6 +292,7 @@ public class OsmMapView extends MapView implements MapView.OnFirstLayoutListener
             features.add(index, polygonView);
             Polygon polygon = (Polygon) polygonView.getFeature();
             polygonMap.put(polygon, polygonView);
+            polygon.setOnClickListener(onPolygonClickListener);
         } else if (child instanceof OsmMapUrlTile) {
             OsmMapUrlTile urlTileView = (OsmMapUrlTile) child;
             urlTileView.addToMap(this);
@@ -661,6 +663,16 @@ public class OsmMapView extends MapView implements MapView.OnFirstLayoutListener
             WritableMap event = makeClickEventData(polyline.getPoints().get(0));
             event.putString("action", "polyline-press");
             manager.pushEvent(context, polylineMap.get(polyline), "onPress", event);
+            return true;
+        }
+    };
+
+    private Polygon.OnClickListener onPolygonClickListener = new Polygon.OnClickListener() {
+        @Override
+        public boolean onClick(Polygon polygon, MapView mapView, GeoPoint geoPoint) {
+            WritableMap event = makeClickEventData(polygon.getPoints().get(0));
+            event.putString("action", "polygon-press");
+            manager.pushEvent(context, polygonMap.get(polygon), "onPress", event);
             return true;
         }
     };
