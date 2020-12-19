@@ -1,4 +1,4 @@
-# @mvits/react-native-maps-osmdroid [![npm version](https://img.shields.io/npm/v/react-native-maps-osmdroid.svg?style=flat)](https://www.npmjs.com/package/react-native-maps-osmdroid)
+# @mvits/react-native-maps-osmdroid [![npm version](https://img.shields.io/npm/v/@mvits/react-native-maps-osmdroid.svg?style=flat)](https://www.npmjs.com/package/@mvits/react-native-maps-osmdroid)
 
 Clone of react-native-maps (React Native Map components for iOS + Android) supporting Open Street Maps based on osmdroid.
 
