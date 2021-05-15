@@ -690,6 +690,9 @@ This project is a fork from [fqborges/react-native-maps-osmdroid](https://github
 
 ## About this current version
 
+Version [0.0.2](https://github.com/mvits/react-native-maps-osmdroid/releases/tag/v0.0.1) :
+* Fixed and add  polyline function "onPress" event. Contribution made by [Jose Garcia](https://github.com/J0ANGARFLO)
+
 Version [0.0.1](https://github.com/mvits/react-native-maps-osmdroid/releases/tag/v0.0.1) :
 * All function present to master branch project [fqborges/react-native-maps-osmdroid](https://github.com/fqborges/react-native-maps-osmdroid), for this date : 19-12-2020
 * Fixed and add  polygon function "onPress" event. Contribution made by [Jose Garcia](https://github.com/J0ANGARFLO)

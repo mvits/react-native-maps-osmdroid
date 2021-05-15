@@ -2,7 +2,7 @@
   "name": "@mvits/react-native-maps-osmdroid",
   "description": "React Native Mapview component for iOS + Android. However this project is only Android tested.",
   "main": "index.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Stiv Verdugo <stivmarquez.ud@gmail.com>",
   "license": "MIT",
   "scripts": {
